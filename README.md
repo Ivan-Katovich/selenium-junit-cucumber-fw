@@ -2,22 +2,20 @@
 
 Open a command window and run:
 
-    mvn test
+    mvn install
 
 This runs Cucumber features using Cucumber's JUnit runner. The `@RunWith(Cucumber.class)` annotation on the `src/test/java/e2e/Run.java`
 file tells JUnit to kick off Cucumber.
 
-    mvn -Dauthor=https://author.test1-cms.gb.travelsupermarket.com test
+    mvn -Denvironment=test1 install
 
 You can specify in what environments run e2e
 
-    mvn -Dbrowser=Chrome test
+    mvn -Dbrowser=Chrome install
 
 You can specify in what browser or Grid run e2e:
         "Chrome";
         "Firefox";
-        "TSMGridFromTSM" - by default;
-        "TSMGridFromEpam"
 
 ## Overriding options
 
