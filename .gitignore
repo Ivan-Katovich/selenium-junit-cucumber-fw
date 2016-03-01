@@ -1,0 +1,10 @@
+target
+*.iml
+.idea
+.settings
+.project
+.classpath
+.checkstyle
+bin
+reports
+surefire
